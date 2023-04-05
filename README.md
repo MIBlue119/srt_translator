@@ -1,5 +1,7 @@
 ## SRT Translator
 
+- A practice to rewrite a caption translator with rust
+
 ## Usage
 
 - build and run the code with example srt
@@ -9,9 +11,12 @@
 
 ## Convert a .srt/ .vtt to desired language
 
-- Steps
-  - Argument parser support
-  - File loader
-  - OpenAI API calling
+- TODO
+
+  - [X] Argument parser support
+  - [X] File loader
+  - [X] OpenAI API calling
+
   - Chunker
-  - Prompt loader
+
+  - [X] Prompt loader

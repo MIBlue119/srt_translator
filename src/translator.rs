@@ -1,8 +1,5 @@
-use anyhow::Error;
 use anyhow::Result;
-use std::fmt;
 use std::fs::File;
-use std::io;
 use std::io::{BufWriter, Write};
 // import the loader module
 use crate::loader::srt_loader;
@@ -10,11 +7,7 @@ use crate::openai::OpenAIClient;
 use crate::prompter::TranslatorPrompter;
 use crate::settings::OpenAISettings;
 
-use anyhow::Error as AnyError;
-use std::io::Error as IoError;
-
 pub struct Translator {
-    text_engine: String,
     loader: srt_loader::SrtLoader,
     pub loaded_lines: Vec<String>,
     openai_client: OpenAIClient,
@@ -24,9 +17,8 @@ pub struct Translator {
 impl Translator {
     pub fn new(language: String) -> Result<Translator, anyhow::Error> {
         let settings = OpenAISettings::new();
-        let language = language.to_lowercase().clone();
+        let language = language.to_lowercase();
         Ok(Translator {
-            text_engine: String::from("gpt-3.5-turbo"),
             loader: srt_loader::SrtLoader::new(),
             loaded_lines: Vec::new(),
             openai_client: OpenAIClient::new(settings).unwrap(),

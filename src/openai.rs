@@ -7,7 +7,7 @@ use async_openai::{
     },
     Client,
 };
-use tiktoken_rs::{get_chat_completion_max_tokens, get_completion_max_tokens};
+use tiktoken_rs::get_completion_max_tokens;
 
 /// ref: https://github.dev/zurawiki/gptcommit
 #[derive(Clone, Debug)]
@@ -22,7 +22,7 @@ impl OpenAIClient {
         if api_key.is_empty() {
             bail!("OPENAI_API_KEY is not set, please set it in your environment variables.");
         }
-        let mut openai_client = Client::new().with_api_key(&api_key);
+        let openai_client = Client::new().with_api_key(&api_key);
         Ok(Self {
             text_engine: settings.text_engine.unwrap(),
             client: openai_client,

@@ -14,7 +14,7 @@ impl OpenAISettings {
         let mut openai_api_key = String::new();
         if let Ok(api_key) = std::env::var("OPENAI_API_KEY") {
             if !api_key.is_empty() {
-                print!("OPENAI_API_KEY is set, using it to authenticate with OpenAI.\n");
+                println!("OPENAI_API_KEY is set, using it to authenticate with OpenAI.\n");
                 openai_api_key = api_key;
             }
         }

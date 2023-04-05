@@ -1,18 +1,18 @@
 1
 0:00:00.000 --> 0:00:02.220
-Hallo, das Folgende wird gehört, solange jemand zuhört.
+"Hi, unten ist nur jemand zuhören."
 
 2
 0:00:02.220 --> 0:00:03.340
-Wenn du unsere Show magst.
+Wenn Sie unser Programm mögen
 
 3
 0:00:03.340 --> 0:00:05.180
-Ich hoffe, dass du an unserem Abonnement-Sponsoring teilnehmen können.
+Ich hoffe, dass Sie an unserem Abonnement-Sponsoring teilnehmen können.
 
 4
 0:00:05.180 --> 0:00:07.860
-"Lassen Sie uns bessere Inhalte mit besseren Ressourcen erstellen."
+Lass uns bessere Inhalte mit besseren Ressourcen erstellen.
 
 5
 0:00:07.860 --> 0:00:09.820
@@ -24,16 +24,16 @@ Halleluja
 
 7
 0:00:20.300 --> 0:00:21.980
-Hallo, willkommen zurück zu "Solange es jemand hört, ist es gut".
+Hallo, willkommen zurück, solange jemand zuhört, ist alles in Ordnung.
 
 8
 0:00:21.980 --> 0:00:22.700
-Ich bin Jia Yu.
+Ich bin Jiayu.
 
 9
 0:00:22.700 --> 0:00:23.460
-Ich bin Ya Qun.
+Ich bin Yaqun.
 
 10
 0:00:23.460 --> 0:00:24.300
-Ich bin Si Jie.
+Ich bin Sijie.

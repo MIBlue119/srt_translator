@@ -6,7 +6,7 @@ pub struct TranslatorPrompter {
 
 impl TranslatorPrompter {
     pub fn new(language: String) -> TranslatorPrompter {
-        TranslatorPrompter { language: language }
+        TranslatorPrompter { language }
     }
 
     pub fn get_translation_prompt(&self, chunk: &String) -> String {

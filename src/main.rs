@@ -1,6 +1,4 @@
-use clap::{builder::Str, Parser}; // Use the clap crate to parse the arguments
-use std::env; // Import the env module to read the arguments
-
+use clap::Parser; // Use the clap crate to parse the arguments
 /// Tell the compiler we are using the loader module
 mod loader;
 // use crate::loader::srt_loader;

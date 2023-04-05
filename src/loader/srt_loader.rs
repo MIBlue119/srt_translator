@@ -2,16 +2,12 @@ use std::fs::File;
 use std::io::{BufRead, BufReader};
 use std::path::Path;
 
-pub struct SrtLoader {
-    file_path: String,
-}
+pub struct SrtLoader {}
 
 impl SrtLoader {
     // A constructor for the SrtLoader struct
     pub fn new() -> SrtLoader {
-        SrtLoader {
-            file_path: String::from("None"),
-        }
+        SrtLoader {}
     }
     // A method to load the srt file and return a vector of strings
     pub fn load_srt_file(&self, file_path: String) -> Vec<String> {
@@ -34,6 +30,6 @@ impl SrtLoader {
             println!("File does not exist");
         }
         // Return an empty vector if the file does not exist
-        return Vec::new();
+        Vec::new()
     }
 }

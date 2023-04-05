@@ -47,14 +47,9 @@ impl Translator {
         for line in &self.loaded_lines {
             if last_line.contains("-->") && !line.is_empty() {
                 let translated_line = self.translate_one_line(line.clone()).await?;
-                //Ｗrite the translated line to the file
-                //writer.write_all(translated_line.as_bytes())?;
                 writeln!(&mut writer, "{}", translated_line)?;
             } else {
                 last_line = line.to_owned();
-                // print!("{:?}", last_line);
-                //translated_lines.push(line);
-                //writer.write_all(line.as_bytes())?;
                 writeln!(&mut writer, "{}", line)?;
             }
         }

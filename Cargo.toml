@@ -1,8 +1,16 @@
 [package]
 name = "srt_translator"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
-
+rust-version = "1.67"
+authors = ["Weiren Lan<miblue119@gmail.com>"]
+categories = ["development-tools"]
+keywords = ["openai", "ai", "gpt"]
+description = "A srt translator using OpenAI GPT API"
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/MIBlue119/srt_translator"
+repository = "https://github.com/MIBlue119/srt_translator"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
